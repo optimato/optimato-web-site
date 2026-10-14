@@ -1,0 +1,16 @@
+# Local Python environment and generated output
+.venv/
+site/
+.cache/
+__pycache__/
+*.pyc
+
+# One-off WordPress migration materials (kept locally)
+source-snapshot/
+migration-report.json
+requirements-migration.txt
+scripts/inspect_source.py
+scripts/migrate.py
+
+# Local visual checks
+qa/

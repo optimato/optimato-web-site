@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block footer %}
+<div class="sb-funding"><div class="md-grid sb-funding-inner">
+<img src="{{ 'assets/logos/erc-eu.jpg' | url }}" alt="European Research Council and European Union" loading="lazy" width="180">
+<p>This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme <a href="https://erc.easme-web.eu/?p=866026">grant agreement n. 866026</a>.</p>
+<p>University of Trieste<br>Department of Physics<br>via A. Valerio, 2 · 34127 Trieste, Italy<br>T. +39 040 558 2960</p>
+</div></div>
+{{ super() }}
+{% endblock %}

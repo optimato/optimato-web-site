@@ -1,0 +1,58 @@
+[project]
+site_name = "S-BaXIT"
+site_description = "Scattering-based X-ray Imaging and Tomography — the OptImaTo group at the University of Trieste"
+site_author = "OptImaTo group"
+# Set site_url to the final custom domain before publishing.
+site_url = "http://127.0.0.1:8000/"
+copyright = "Copyright &copy; 2021 S-BaXIT. All Rights Reserved."
+extra_css = ["stylesheets/extra.css"]
+# Retain the source, but omit this personal page from the site.
+exclude_docs = "/personal-page-fabio-de-marco.md"
+nav = [
+  { "Home" = "index.md" },
+  { "Research" = "research.md" },
+  { "Our team" = "our-team.md" },
+  { "News & events" = ["news/index.md"] },
+  { "Publications" = "publications.md" },
+  { "Contacts" = "contacts.md" },
+  { "Job offers" = "jobs.md" },
+]
+[project.theme]
+language = "en"
+custom_dir = "overrides"
+logo = "assets/logos/s-baxit-color.png"
+favicon = "assets/favicon.svg"
+features = ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.footer", "search.highlight", "toc.follow", "content.footnote.tooltips"]
+[project.theme.font]
+text = false
+code = false
+[[project.theme.palette]]
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to dark mode"
+[[project.theme.palette]]
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to light mode"
+[project.markdown_extensions]
+attr_list = {}
+md_in_html = {}
+footnotes = {}
+tables = {}
+admonition = {}
+toc.permalink = true
+pymdownx.details = {}
+pymdownx.superfences = {}
+
+[project.plugins.blog]
+blog_dir = "news"
+post_dir = "{blog}/posts"
+post_url_format = "{slug}"
+pagination_per_page = 6
+archive = true
+archive_date_format = "yyyy"
+archive_url_format = "{date}"
