@@ -3,7 +3,7 @@ site_name = "S-BaXIT"
 site_description = "Scattering-based X-ray Imaging and Tomography — the OptImaTo group at the University of Trieste"
 site_author = "OptImaTo group"
 # Set site_url to the final custom domain before publishing.
-site_url = "http://127.0.0.1:8000/"
+site_url = "https://optimato.github.io/"
 copyright = "Copyright &copy; 2021 S-BaXIT. All Rights Reserved."
 extra_css = ["stylesheets/extra.css"]
 # Retain the source, but omit this personal page from the site.
